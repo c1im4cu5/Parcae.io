@@ -1,5 +1,5 @@
 [
-    {'month': "January", "day": "03", "1786": "", 'head': 'Elizabeth Wilson', 'body': "Her reprieve coming too late, Elizabeth Wilson was hanged this day in 1786 for the death of her twins. She was innocent.", 'addresses': []},
+    {'month': "January", "day": "03", "year": "1786", 'head': 'Elizabeth Wilson', 'body': "Her reprieve coming too late, Elizabeth Wilson was hanged this day in 1786 for the death of her twins. She was innocent.", 'addresses': []},
     {'month': "January", "day": "04", "year": "1960",'head': 'Albert Camus', 'body': "Albert Camus died this day in 1960. He was 46 years old.", 'addresses': []},
     {'month': "January", "day": "06", "year": "1634",'head': 'Anna Tait', 'body': "Anna Tait was strangled in 1634. She had sex with the devil and killed her husband and unborn child.", 'addresses': []},
     {'month': "January", "day": "08", "year": "1324",'head': 'Marco Polo', 'body': "Marco Polo died on 1/8/1324 AD. Age: 69/70.", 'addresses': []},
@@ -80,4 +80,21 @@
     {'month': "May", "day": "22", "year": "1885",'head': 'Victor Hugo', 'body': "Death Day. Author.", 'addresses': []},
     {'month': "May", "day": "22", "year": "337 AD",'head': 'Constantine the Great', 'body': "Death Day. Age: 65", 'addresses': []},
     {'month': "May", "day": "29", "year": "1453",'head': 'Fall of Constantinople', 'body': "Mohmed the Second conquered Constantinople", 'addresses': []},
+    {'month': "June", "day": "04", "year": "1798",'head': 'Giacomo Casanova', 'body': "Death Day. Age: 73", 'addresses': []},
+    {'month': "June", "day": "05", "year": "1318",'head': 'John Deydras', 'body': "AKA John of Powderham. He claimed to be Edward II. In his attempt to convince, he stated a pig bit off his ear. His nanny, fearing the royal parents, switched him. He blamed his cat, a servant of the devil, for putting him up to the ruse. Both were hung by the queen's orders. Edward II wanted to make him a jester.", 'addresses': []},
+    {'month': "June", "day": "08", "year": "632 AD",'head': 'The Prophet Muhammad', 'body': "Death Day. Age: 63", 'addresses': []},
+    {'month': "June", "day": "08", "year": "793 AD",'head': 'First Viking Raid', 'body': "The first viking raid was recorded today in 793 AD. It occurred in Lindisfarnein Northumbria", 'addresses': []},
+    {'month': "June", "day": "09", "year": "68 AD",'head': 'Emperor Nero', 'body': "The cowardly death day of Nero. Age: 30", 'addresses': []},
+    {'month': "June", "day": "09", "year": "1870",'head': 'Charles Dickens', 'body': "Death Day. Age: 58", 'addresses': []},
+    {'month': "June", "day": "10", "year": "323 BC",'head': 'Alexander the Great', 'body': "Death Day. Age: 32. What did Caesar do when he considered the achievements of Alexander?", 'addresses': []},
+    {'month': "June", "day": "12", "year": "918 AD",'head': 'Aethelflaed', 'body': "Lady of Mercia. Warrior Queen. Death Day. Age: 47/48", 'addresses': []},
+    {'month': "June", "day": "16", "year": "1971",'head': 'Tupac Shakur', 'body': "Name Day. \"We was young and we was dumb, but we had heart\"", 'addresses': []},
+    {'month': "June", "day": "19", "year": "",'head': 'Lycurgus the Lawgiver', 'body': "Born: 800 BC. Died: 730 BC. Celebrate the Life.", 'addresses': []},
+    {'month': "June", "day": "20", "year": "1375",'head': 'Niccolo di Toldo', 'body': "Executed by beheading. His head fell into the arms of St. Catherine of Sienna as though it was the death of a devout martyr and not the death of one condemned for a human crime. Little is known of the man prior to his death. Catherine watched him ascend to heaven.", 'addresses': []},
+    {'month': "June", "day": "23", "year": "2018",'head': 'Ripley Beatrix Kiddo O'Connor Cain', 'body': "A tiger cannot be caged. Ripley the runaway train.", 'addresses': []},
+    {'month': "June", "day": "26", "year": "363 AD",'head': 'Julian the Philosopher', 'body': "Julian the Apostate. Last pagan emperor of Rome. Death Day. Age: 31/32", 'addresses': []},
+    {'month': "June", "day": "26", "year": "2019",'head': 'Jordan Lindsey', 'body': "Death Day. Age: 21. Attacked and eaten by three tiger sharks in the Bahamas.", 'addresses': []},
+    {'month': "June", "day": "28", "year": "572 AD",'head': 'Albion - King of the Lombards', 'body': "Death Day. Assassinated with the help of his wife, Rosamund.", 'addresses': []},
+    {'month': "June", "day": "28", "year": "548 AD",'head': 'Empress Theodora', 'body': "Death Day. Age: 48-51. The cruel empress. Rumored to have died from breast cancer.", 'addresses': []},
+
 ]
