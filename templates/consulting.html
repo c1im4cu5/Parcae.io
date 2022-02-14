@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="google-site-verification" content="5aISqi_mHoFcem1zZx15Kqpi1TQJfpfk34XdVs_tymk"/>
+
+  <title>Parcae - Consulting Services</title>
+  <meta name
+  <meta name="description" content="Crypto Services and Consulting with REST Technical Analysis">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="{{ url_for('index') }}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('consulting') }}">Consult</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('projects') }}">Projects</a></li>
+          <li><a class="nav-link scrollto " href="{{ url_for('terms') }}">Terms</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <img class="" src="static/img/logo.png" alt="">
+        </div>
+
+        <h1>Parcae</h1>
+        <h2>Development Hub for Climacus</h2>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo mr-auto"><img src="static/img/logo.png" alt=""></a>
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Imperial</a></h1> -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Consulting</h3>
+          </div>
+
+          <div class="col-md-6 about-content">
+
+            <p class="about-text">
+              I am heavily focused on Python data analytics and decentralized finance. You can find me assisting Mai Te Pora with Switcheo Carbon 0xcarbon, Demex Exchange and other open source communities.
+            </p>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-12">
+          <div class="col-lg-6 about-img">
+            <img src="static/img/pos_plot.png" alt="">
+          </div>
+
+            <p class="about-text">
+              During much of my research into predictive algorithms, market making and arbitage trading, I realized there were not many outlets to assist end users in making their dreams of passive income through decentralized finance and forex trading a reality. While there is a wealth of information available, most users would need to learn command running and file manipulation (especially for Windows users) to successfully accomplish these tasks.
+            </p>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-12">
+
+          <div class="col-lg-6 about-img">
+            <img src="static/img/swth_linear_prediction.png" alt="">
+          </div>
+
+            <p class="about-text">
+              Machine learning algorithms have been the new wave in predictive analytics. The R squared mean algorithhm is a sequential predictive algorithm. Satellite imagery is used to reference parking lots and public company SEC filings to anticipate stock price. Many more organizations/companies are turning to ML for customer service.  There is currently an API associated with crypto predictions associated with the site. Please check out the RapidAPI link.
+            </p>
+
+          </div>
+          </p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+
+            {% block content %}
+              <form action="" method="post" novalidate>
+                  {{ form.hidden_tag() }}
+                  <p>
+                      {{ form.name.label }}<br>
+                      {{ form.name(size=32) }}
+                  </p>
+                  <p>
+                      {{ form.email.label }}<br>
+                      {{ form.email(size=32) }}
+                  </p>
+                  <p>
+                      {{ form.details.label }}<br>
+                      {{ form.details(style='height: 100px', size=300) }}
+                  </p>
+                  <p>{{ form.submit() }}</p>
+              </form>
+          {% endblock %}
+
+        </div>
+      </div></p>
+
+      </div>
+
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container wow fadeInUp">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 service-item">
+                  <div class="service-icon"><a href="{{ url_for('projects') }}"><i class="bi bi-stickies"></i></a></div>
+                  <h4 class="service-title"><a href="{{ url_for('projects') }}">Projects</a></h4>
+                  <p class="service-description">Open source software and development. Climacus is currently working on a few different projects.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 service-item">
+                  <div class="service-icon"><a href="{{ url_for('consulting') }}"><i class="bi bi-people"></i></a></div>
+                  <h4 class="service-title"><a href="{{ url_for('consulting') }}">Consulting</a></h4>
+                  <p class="service-description">Consulting services for setting up Coinbase/0xcarbon trading bots, analytics for larger datasets, predictive maching learning algorithms, Flask API's and Enterprise Resource Planning consulting services.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 service-item">
+                  <div class="service-icon"><a href="{{ url_for('contact') }}"><i class="bi bi-mailbox2"></i></a></div>
+                  <h4 class="service-title"><a href="{{ url_for('contact') }}">Contact</a></h4>
+                  <p class="service-description">Any questions? Comments? Eager to reach out for a potential collobration? I'm always excited to speak with like-minded individuals.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 service-item">
+                  <div class="service-icon"><a href="{{ url_for('terms') }}"><i class="bi bi-type-underline"></i></a></div>
+                  <h4 class="service-title"><a href="{{ url_for('terms') }}">Terms & Conditions</a></h4>
+                  <p class="service-description">By accessing and/or utilizing the site and it's features, you agree to our Terms and Conditions</a> </p>
+                </div>
+              </div>
+            </div>
+          </section><!-- End Services Section -->
+
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
