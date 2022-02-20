@@ -1,0 +1,104 @@
+{% extends 'index.html' %}
+
+{% block title %}Consulting Services - Parcae.io{% endblock title%}
+
+{%block content%}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <img class="" src="static/img/logo.png" alt="">
+        </div>
+
+        <h1>Parcae</h1>
+        <h2>Development Hub for Climacus</h2>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo mr-auto"><img src="static/img/logo.png" alt=""></a>
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Imperial</a></h1> -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Consulting</h3>
+          </div>
+
+          <div class="col-md-6 about-content">
+
+            <p class="about-text">
+              I am heavily focused on Python data analytics and decentralized finance. You can find me assisting Mai Te Pora with Switcheo Carbon 0xcarbon, Demex Exchange and other open source communities.
+            </p>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-12">
+          <div class="col-lg-6 about-img">
+            <img src="static/img/pos_plot.png" alt="">
+          </div>
+
+            <p class="about-text">
+              During much of my research into predictive algorithms, market making and arbitage trading, I realized there were not many outlets to assist end users in making their dreams of passive income through decentralized finance and forex trading a reality. While there is a wealth of information available, most users would need to learn command running and file manipulation (especially for Windows users) to successfully accomplish these tasks.
+            </p>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-12">
+
+          <div class="col-lg-6 about-img">
+            <img src="static/img/swth_linear_prediction.png" alt="">
+          </div>
+
+            <p class="about-text">
+              Machine learning algorithms have been the new wave in predictive analytics. The R squared mean algorithhm is a sequential predictive algorithm. Satellite imagery is used to reference parking lots and public company SEC filings to anticipate stock price. Many more organizations/companies are turning to ML for customer service.  There is currently an API associated with crypto predictions associated with the site. Please check out the RapidAPI link.
+            </p>
+
+          </div>
+          </p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+
+              <form action="" method="post" novalidate>
+                  {{ form.hidden_tag() }}
+                  <p>
+                      {{ form.name.label }}<br>
+                      {{ form.name(size=32) }}
+                  </p>
+                  <p>
+                      {{ form.email.label }}<br>
+                      {{ form.email(size=32) }}
+                  </p>
+                  <p>
+                      {{ form.details.label }}<br>
+                      {{ form.details(style='height: 100px', size=300) }}
+                  </p>
+                  <p>{{ form.submit() }}</p>
+              </form>
+
+        </div>
+      </div></p>
+
+      </div>
+
+
+    </section><!-- End About Section -->
+
+{% endblock content %}
