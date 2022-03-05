@@ -208,73 +208,11 @@
 
   });
 
-  window.userWalletAddress = null
-  window.userWalletAddress = null
-  const loginButton = document.getElementById('loginButton')
-  const userWallet = document.getElementById('userWallet')
-
-  async function loginWithMetaMask() {
-    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
-      .catch((e) => {
-        console.error(e.message)
-        return
-      })
-    if (!accounts) { return }
-
-    window.userWalletAddress = accounts[0]
-
-    rightnow = (Date.now()/1000).toFixed(0)
-    sortanow = rightnow-(rightnow%600)
-
-    const message = "Signing in to Parcae.io at " + sortanow
-
-    const signature = await ethereum.request({ method: 'personal_sign', params: [ message, window.userWalletAddress ] });
-
-    userWallet.innerText = window.userWalletAddress
-    loginButton.innerText = 'Sign out of MetaMask'
-
-    fetch('login', {
-      method: 'post',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify([window.userWalletAddress,signature])
-    }).then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-    }).then((response) => {
-      window.location = 'user';
-    });
-  }
-
-  function signOutOfMetaMask() {
-    window.userWalletAddress = null
-    userWallet.innerText = ''
-    loginButton.innerText = 'Sign in with MetaMask'
-    window.location = 'index';
-
-  }
-
-  function toggleButton() {
-    if (!window.ethereum) {
-      loginButton.innerText = 'MetaMask is not installed'
-      loginButton.classList.remove('bg-purple-500', 'text-white')
-      loginButton.classList.add('bg-gray-500', 'text-gray-100', 'cursor-not-allowed')
-      return false
-    }
-
   function signOut() {
       window.userWalletAddress = null;
-      userWallet.innerText = '';
-      window.location = 'user';
+      window.location = '/';
     }
 
-    loginButton.addEventListener('click', loginWithMetaMask)
-  }
-
-  window.addEventListener('DOMContentLoaded', () => {
-    toggleButton()
-  });
-
+  logoutButton.addEventListener('click', signOut);
 
 })()
