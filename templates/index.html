@@ -32,6 +32,7 @@
       <li><a class="nav-link scrollto" href="{{ url_for('projects') }}">Projects</a></li>
       <li><a class="nav-link scrollto " href="{{ url_for('terms') }}">Terms</a></li>
       <li><a class="nav-link scrollto" href="{{ url_for('contact') }}">Contact</a></li>
+      <li><a class="nav-link scrollto" href="{{ url_for('user_login') }}">Login</a></li>
     </ul>
     <i class="bi bi-list mobile-nav-toggle"></i>
   </nav><!-- .navbar -->
@@ -72,32 +73,34 @@
       <div class="container wow fadeInUp">
         <div class="row">
           <div class="col-md-12">
-            <h3 class="section-title">REST API's</h3>
-            <div class="section-title-divider"></div>
-            <p class="section-description">One of the functions for the site is providing REST API Technical Analysis data via RapidAPI.com. Cryptocurrency technical analysis via queries from Coinbase. There are indicators to meet the need of every trader! Check out the projects section to get a better understanding of the possibilities!</p>
+            <h3 class="section-title">REST APIs - Web3 - History - Data Science - High Frequency Trading</h3>
+            <p class="section-description">One function for the site is providing REST API Technical Analysis data via <a href="https://rapidapi.com/thebrotherscain-drHwIzpcDcy/api/cryptocurrency-vwap-with-candlesticks">RapidAPI.com</a>. Cryptocurrency technical analysis via queries from Coinbase. There are indicators to meet the need of every trader! Check out the projects section to get a better understanding of the possibilities!</p>
           </div>
-        </div>
+        </div><p>
       </div>
-      <div class="container about-container wow fadeInUp">
+      <div class="container wow fadeInUp">
         <div class="row">
-
-          <div class="col-lg-6 about-img">
-            <img src="static/img/GannTradingChart.jpg" alt="GANN with Prediction">
+          <div class="col-md-12">
+            <h3 class="section-title">Web3 Metamask Login with Historical Celebrations!</h3>
+            <p class="section-description">Metamask login has been added to the site! A linked MongoDB has been established. Always a fan of history, the creator of the site is in the process of building/enabling features that will allow for subscriptions...and...possibly an NFT collection in the future! Currently Running with Limited Functionality. <a href="{{ url_for('user_login') }}">Login</a><p><p>
           </div>
-
-          <div class="col-md-6 about-content">
-            <h2 class="about-title">Consulting Services</h2>
-            <p class="about-text">
-              Information is power! The ability to interpret data is fundamental to making decisions. I can easily assist in dataset analytics and provide key insights that will help you make informed decisions.<p>
-              Bypass the probems of the current financial system; which locks out too many people from wealth. I can also offer assistance in setting up bots to run on Coinbase or 0xcarbon. I am not a financial advisor. How you set up your bot would be your decision! <p>
-            </p>
+        </div><p>
+      </div>
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Consulting Services</h3>
+            <p class="section-description">The ability to interpret data is fundamental to making decisions. Get assistance in dataset analytics to provide key insights that will help you make informed decisions, further your business/organization or personal goals!<p><p>
+              <div class="col-lg-6 about-img">
+                <img src="static/img/btc-usd-gann.png" alt="GANN with Prediction Lines">
+              </div><p>
+            <p class="section-description">We also offer assistance in setting up high frequency asynchronous bots to run on Coinbase or 0xcarbon. The site does NOT offer financial advise. How you set up your bot would be your decision! Check out <a href="{{ url_for('consulting') }}">Consulting</a> for details.
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
+  </section><!-- End About Section -->
 
-  {% endblock content %}
+{% endblock content %}
 
   <!-- ======= Services Section ======= -->
   <section id="services">

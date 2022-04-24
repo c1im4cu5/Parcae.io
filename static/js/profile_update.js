@@ -212,16 +212,26 @@
       window.userWalletAddress = null;
       window.location = '/';
     }
-  logoutButton.addEventListener('click', signOut);
 
-  const profileButton = document.getElementById('profileButton')
-  function profileClick() {
-    fetch('user', {
+  const profileSubmit = document.getElementById('profileSubmit')
+  function profileUpload() {
+    fetch('profile', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(["submit"])
+    }).then((response => {
+      if (!response.ok) {
+        throw new Error('Network response was not OK');
+      }
+      return response.json();
+    }))
+    .then((data) => {
+      console.log(data);
+    }).then((response) => {
+      window.location = 'user';
     });
   }
+  profileSubmit.addEventListener('click', profileUpload);
 
-  profileButton.addEventListener('click', profileClick);
+
 })()
