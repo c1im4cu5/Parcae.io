@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
-    "axios": "^1.7.9",
+    "axios": "^1.8.2",
     "boostrap": "^2.0.0",
     "bootstrap": "^5.3.3",
     "cheerio": "^1.0.0",
