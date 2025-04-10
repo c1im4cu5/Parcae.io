@@ -1,0 +1,471 @@
+.App {
+  text-align: center;
+  background: #ffffff;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #000000;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav
+{
+   position: fixed;
+   top: 0px;
+   background-color: ##3034fa;
+   color: #000000;
+   flex-wrap: nowrap;
+}
+
+body {
+    font-family: Arial, sans-serif; /* fallback fonts */
+    font-size: 16px; /* default font size */
+    line-height: 1.5; /* default line height */
+    margin: 0; /* reset default margin */
+    padding: 0; /* reset default padding */
+    padding-top: 55px;
+}
+
+
+.pl-5, .pr-5, h1, h2, p, a, .lead {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p.lead {
+  font-size: 20px;
+  font-style: italic;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+navbar-brand {
+  color: white;
+}
+
+.header-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  white-space: pre-line;
+}
+
+.header-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.toggle-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toggle-header {
+  cursor: pointer;
+  padding: 12px 20px;
+  background-color: #F27300;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-header:hover {
+  background-color: #FC8F2D;
+}
+
+.toggle-header.active {
+  background-color: #FC8F2D;
+}
+
+.toggle-content {
+  padding-left: 20px;
+  display: none;
+}
+
+.toggle-content li {
+  margin-bottom: 10px;
+}
+
+.toggle-header.active + .toggle-content {
+  display: block;
+}
+
+.subscription-table {
+  border-collapse: collapse;
+  width: 100%;
+  wordWrap: break-word;
+  maxWidth: 100%;
+  table-layout: fixed; /* Ensures the table respects its container width */
+}
+
+.subscription-table th,
+.subscription-table td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #000000; /* black outline for cells */
+}
+
+.subscription-table th {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subscription-table td {
+  font-size: 18px;
+}
+
+.checkmark-green {
+  color: #00FF00;
+}
+
+.user-profile-table {
+  width: 100%;
+  border: 2px solid black;
+  font-size: 16px;
+  wordWrap: break-word;
+  maxWidth: 100%;
+  table-layout: fixed; /* Ensures the table respects its container width */
+}
+
+.user-profile-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.user-profile-table svg {
+  color: green;
+  margin-right: 5px;
+}
+
+.toggle-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.contract-item {
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  border: 2px solid black;
+  font-size: 16px;
+}
+
+.contract-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+  white-space: normal; /* Allow text to wrap */
+  overflow-wrap: break-word; /* Allow word wrapping */
+  background-color: #a60f85;
+}
+
+.contract-content {
+  color: #000000;
+  padding: 10px;
+  border-top: none;
+  display: flex;
+  flex-direction: column; /* Ensures children are stacked vertically */
+  flex-wrap: wrap; /* Allows wrapping to new rows */
+  gap: 10px; /* Adds spacing between items */
+  max-width: 100%;
+}
+
+.contract-tab.active {
+  background-color: #a60f85; /* Owner color */
+}
+
+.contract-tab.participant.active {
+  background-color: #a60f85; /* Participant color */
+}
+
+.contract-tab.mediator.active {
+  background-color: #a60f85; /* Mediator color */
+}
+
+.contract-content.active {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 10px;
+  border-top: none;
+  display: flex;
+  flex-direction: column; /* Ensures children are stacked vertically */
+  flex-wrap: wrap; /* Allows wrapping to new rows */
+  gap: 10px; /* Adds spacing between items */
+  max-width: 100%;
+}
+
+.contract-function-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Wrap buttons if they exceed container width */
+  gap: 10px;
+}
+
+.contract-function {
+  flex: 1; /* Distribute available width equally */
+  min-width: 100%; /* Minimum width for each button */
+}
+.function-container {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column; /* Ensures children are stacked vertically */
+  flex-wrap: wrap; /* Allows wrapping to new rows */
+  gap: 10px; /* Adds spacing between items */
+  max-width: 100%;
+}
+
+.d-flex {
+  display: flex;
+  display: flex;
+  flex-direction: column; /* Ensures children are stacked vertically */
+  flex-wrap: wrap; /* Allows wrapping to new rows */
+  gap: 10px; /* Adds spacing between items */
+  max-width: 100%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mb-2 {
+  margin-bottom: 10px;
+}
+
+.function-input {
+  display: flex;
+  flex-wrap: wrap; /* Allow inputs to wrap to new lines */
+  gap: 10px; /* Add spacing between inputs */
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow inputs to wrap to new lines */
+  flex-direction: row; /* Ensures children are stacked verticall */
+  gap: 10px; /* Add spacing between inputs */
+}
+
+.parameter-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Ensures children are stacked vertically */
+  flex-wrap: wrap; /* Allows wrapping to new rows */
+  gap: 10px; /* Adds spacing between items */
+  max-width: 100%;
+}
+
+.parameter-container input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px; /* Adjust width as needed */
+}
+
+.view-data {
+  white-space: normal; /* Allow text to wrap */
+  overflow-wrap: break-word; /* Allow word wrapping */
+  margin-top: 10px; /* Add spacing for better visibility */
+}
+
+.custom-modal-body {
+  /* Apply your custom styles here */
+  color: black;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.custom-roadmap{
+  color: black;
+  height: 220px; /* Fixed height */
+  width: 300px; /* Fixed width (adjust as necessary) */
+  border: 2px solid #000000;
+  background-color: #FFFFFF;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  overflow: hidden; /* Prevent overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.black-text {
+  color: black;
+}
+
+.custom-input {
+  margin-bottom: 10px; /* Add a margin to the bottom */
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Round the edges */
+  padding: 5px 10px; /* Add padding for spacing */
+}
+
+.info-icon {
+  cursor: pointer;
+  display: inline-block; /* Ensures the icon and tooltip stay on the same line */
+}
+
+.info-icon i {
+  margin-left: 4px;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.info-icon:hover .tooltip {
+  display: block; /* Show the tooltip on hover */
+}
+
+/* styles.css */
+.black-icon-link {
+  color: #b103fc;
+  text-decoration: none; /* Optionally, remove underlines */
+}
+
+/* styles.css */
+.selected-button {
+  background-color: #0050a6; /* Darkened background color for selected button */
+  color: white; /* Text color for selected button */
+}
+
+.unselected-button {
+  background-color: #007bff;; /* Background color for unselected button */
+  color: black; /* Text color for unselected button */
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  cursor: wait; /* Set the cursor to "wait" */
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+.update-profile-button {
+  width: 100%; /* Ensures the button takes full width of its container */
+  margin-bottom: 10px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.update-profile-button .ProfileIcon {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.water-cosmos-bg {
+  opacity: 0.9; /* Adjust opacity as needed */
+  animation: moveBackground 20s linear infinite; /* Apply the background animation */
+  /* Add other styles as needed */
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0; /* Initial background position */
+  }
+  100% {
+    background-position: 100% 0; /* Move the background horizontally */
+  }
+}

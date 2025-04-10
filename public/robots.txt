@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /admin/
+Disallow: /scripts/
+Disallow: /contracts/
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /libraries/
+Disallow: /.env
+Sitemap: https://parcae.io/sitemap.xml
