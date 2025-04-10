@@ -79,6 +79,8 @@ Automatic Routing: Every file under /pages becomes a route.
 ### 🧠 Rendering Modes in Next.js
 - Parcae.io uses both Client-Side Rendering (CSR) and Server-Side Rendering (SSR) where appropriate.
 
+--- 
+
 ## ⚙️ How to Implement Parcae.io Locally
 To run the platform on your machine, follow the steps below:
 
