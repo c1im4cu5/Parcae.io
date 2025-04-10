@@ -62,6 +62,50 @@ Ads are minimal, non-invasive, and cookie-light. No personalization is used beyo
 
 ---
 
+## ⚙️ How to Implement Parcae.io Locally
+To run the platform on your machine, follow the steps below:
+
+- 📥 Download All Files
+Clone this repository or download the ZIP. Once extracted, navigate to the root directory.
+
+---
+
+2. 🔑 Set Your OpenAI API Key
+Open the following file:
+
+/companyGeneration.js
+On line 8, replace the placeholder with your actual OpenAI API Key:
+
+// API Keys (Replace with yours)
+const OPENAI_API_KEY = "REPLACE_WITH_YOUR_OPENAI_KEY";
+
+---
+
+## 📦 Install Dependencies
+Make sure you have Node.js installed. Then, from the root directory:
+
+```
+npm install
+```
+
+---
+
+## 📦 Run Development 
+Make sure you have Node.js installed. Then, from the root directory:
+
+```
+npm run dev
+```
+
+---
+
+## 🐳 (Optional) Linux Docker Container Setup
+You can deploy this using Docker on a Linux server.
+
+Check the DOCKERFILE in the root directory. 
+
+---
+
 ## ⚠️ Disclaimer
 
 This project is experimental and not intended for commercial use. AI results are provided for informational purposes only. Parcae.io may be discontinued at any time without notice.
