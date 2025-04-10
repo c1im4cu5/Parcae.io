@@ -62,6 +62,23 @@ Ads are minimal, non-invasive, and cookie-light. No personalization is used beyo
 
 ---
 
+## 🧭 Next.js Routing & Benefits
+Parcae.io leverages Next.js’s built-in file-based routing system to simplify navigation, improve load times, and enable server-rendered pages.
+
+### ✅ Benefits of Next.js Routing
+Automatic Routing: Every file under /pages becomes a route.
+
+- Dynamic Routing Support: Easily create dynamic routes using brackets (e.g. /company/[id].js)
+
+- Built-in API Routes: Files under /pages/api act as serverless functions.
+
+- Fast Refresh & Code Splitting: Improve development speed and user experience.
+
+- Pre-rendering Options: Choose between SSR and static rendering for optimal performance.
+
+### 🧠 Rendering Modes in Next.js
+- Parcae.io uses both Client-Side Rendering (CSR) and Server-Side Rendering (SSR) where appropriate.
+
 ## ⚙️ How to Implement Parcae.io Locally
 To run the platform on your machine, follow the steps below:
 
